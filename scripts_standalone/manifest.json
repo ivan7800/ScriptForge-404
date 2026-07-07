@@ -1,0 +1,722 @@
+[
+  {
+    "id": "v5-pro-31-diagnostico-red-avanzado",
+    "name": "V5.4 Pro - Diagnóstico red avanzado",
+    "category": "Red",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/31_diagnostico_red_avanzado.bat",
+      "ps1": "PS1/31_diagnostico_red_avanzado.ps1",
+      "readme": "README/31_diagnostico_red_avanzado.md"
+    }
+  },
+  {
+    "id": "v5-pro-32-test-puertos-tcp",
+    "name": "V5.4 Pro - Test de puertos TCP",
+    "category": "Red",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/32_test_de_puertos_tcp.bat",
+      "ps1": "PS1/32_test_de_puertos_tcp.ps1",
+      "readme": "README/32_test_de_puertos_tcp.md"
+    }
+  },
+  {
+    "id": "v5-pro-33-test-dns-corporativo",
+    "name": "V5.4 Pro - Test DNS corporativo",
+    "category": "Red",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/33_test_dns_corporativo.bat",
+      "ps1": "PS1/33_test_dns_corporativo.ps1",
+      "readme": "README/33_test_dns_corporativo.md"
+    }
+  },
+  {
+    "id": "v5-pro-34-diagnostico-proxy-completo",
+    "name": "V5.4 Pro - Diagnóstico proxy completo",
+    "category": "Red",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/34_diagnostico_proxy_completo.bat",
+      "ps1": "PS1/34_diagnostico_proxy_completo.ps1",
+      "readme": "README/34_diagnostico_proxy_completo.md"
+    }
+  },
+  {
+    "id": "v5-pro-35-reset-proxy-winhttp-ie",
+    "name": "V5.4 Pro - Reset proxy WinHTTP/usuario",
+    "category": "Red",
+    "risk": "alto",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/35_reset_proxy_winhttp_usuario.bat",
+      "ps1": "PS1/35_reset_proxy_winhttp_usuario.ps1",
+      "readme": "README/35_reset_proxy_winhttp_usuario.md"
+    }
+  },
+  {
+    "id": "v5-pro-36-diagnostico-vpn-basico",
+    "name": "V5.4 Pro - Diagnóstico VPN básico",
+    "category": "Citrix / VPN",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/36_diagnostico_vpn_basico.bat",
+      "ps1": "PS1/36_diagnostico_vpn_basico.ps1",
+      "readme": "README/36_diagnostico_vpn_basico.md"
+    }
+  },
+  {
+    "id": "v5-pro-37-exportar-trazas-red-ticket",
+    "name": "V5.4 Pro - Exportar trazas de red para ticket",
+    "category": "Red",
+    "risk": "medio",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/37_exportar_trazas_de_red_para_ticket.bat",
+      "ps1": "PS1/37_exportar_trazas_de_red_para_ticket.ps1",
+      "readme": "README/37_exportar_trazas_de_red_para_ticket.md"
+    }
+  },
+  {
+    "id": "v5-pro-38-reiniciar-adaptador-red-seleccionado",
+    "name": "V5.4 Pro - Reiniciar adaptador de red seleccionado",
+    "category": "Red",
+    "risk": "medio",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/38_reiniciar_adaptador_de_red_seleccionado.bat",
+      "ps1": "PS1/38_reiniciar_adaptador_de_red_seleccionado.ps1",
+      "readme": "README/38_reiniciar_adaptador_de_red_seleccionado.md"
+    }
+  },
+  {
+    "id": "v5-pro-39-mapear-unidades-desde-csv",
+    "name": "V5.4 Pro - Mapear unidades desde CSV",
+    "category": "Unidades de red",
+    "risk": "medio",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/39_mapear_unidades_desde_csv.bat",
+      "ps1": "PS1/39_mapear_unidades_desde_csv.ps1",
+      "readme": "README/39_mapear_unidades_desde_csv.md"
+    }
+  },
+  {
+    "id": "v5-pro-40-mapear-unidades-por-departamento",
+    "name": "V5.4 Pro - Mapear unidades por departamento",
+    "category": "Unidades de red",
+    "risk": "medio",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/40_mapear_unidades_por_departamento.bat",
+      "ps1": "PS1/40_mapear_unidades_por_departamento.ps1",
+      "readme": "README/40_mapear_unidades_por_departamento.md"
+    }
+  },
+  {
+    "id": "v5-pro-41-reparar-unidades-desconectadas",
+    "name": "V5.4 Pro - Reparar unidades desconectadas",
+    "category": "Unidades de red",
+    "risk": "medio",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/41_reparar_unidades_desconectadas.bat",
+      "ps1": "PS1/41_reparar_unidades_desconectadas.ps1",
+      "readme": "README/41_reparar_unidades_desconectadas.md"
+    }
+  },
+  {
+    "id": "v5-pro-42-desconectar-todas-unidades-red",
+    "name": "V5.4 Pro - Desconectar todas las unidades de red",
+    "category": "Unidades de red",
+    "risk": "alto",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/42_desconectar_todas_las_unidades_de_red.bat",
+      "ps1": "PS1/42_desconectar_todas_las_unidades_de_red.ps1",
+      "readme": "README/42_desconectar_todas_las_unidades_de_red.md"
+    }
+  },
+  {
+    "id": "v5-pro-43-backup-unidades-mapeadas",
+    "name": "V5.4 Pro - Backup unidades mapeadas",
+    "category": "Unidades de red",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/43_backup_unidades_mapeadas.bat",
+      "ps1": "PS1/43_backup_unidades_mapeadas.ps1",
+      "readme": "README/43_backup_unidades_mapeadas.md"
+    }
+  },
+  {
+    "id": "v5-pro-44-restaurar-unidades-mapeadas",
+    "name": "V5.4 Pro - Restaurar unidades mapeadas",
+    "category": "Unidades de red",
+    "risk": "medio",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/44_restaurar_unidades_mapeadas.bat",
+      "ps1": "PS1/44_restaurar_unidades_mapeadas.ps1",
+      "readme": "README/44_restaurar_unidades_mapeadas.md"
+    }
+  },
+  {
+    "id": "v5-pro-45-diagnostico-permisos-unc",
+    "name": "V5.4 Pro - Diagnóstico permisos UNC",
+    "category": "Unidades de red",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/45_diagnostico_permisos_unc.bat",
+      "ps1": "PS1/45_diagnostico_permisos_unc.ps1",
+      "readme": "README/45_diagnostico_permisos_unc.md"
+    }
+  },
+  {
+    "id": "v5-pro-46-generador-unidades-red-interactivo",
+    "name": "V5.4 Pro - Generador unidades de red interactivo",
+    "category": "Unidades de red",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/46_generador_unidades_de_red_interactivo.bat",
+      "ps1": "PS1/46_generador_unidades_de_red_interactivo.ps1",
+      "readme": "README/46_generador_unidades_de_red_interactivo.md"
+    }
+  },
+  {
+    "id": "v5-pro-47-diagnostico-outlook-completo",
+    "name": "V5.4 Pro - Diagnóstico Outlook completo",
+    "category": "Office / Outlook",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/47_diagnostico_outlook_completo.bat",
+      "ps1": "PS1/47_diagnostico_outlook_completo.ps1",
+      "readme": "README/47_diagnostico_outlook_completo.md"
+    }
+  },
+  {
+    "id": "v5-pro-48-reparar-outlook-no-abre",
+    "name": "V5.4 Pro - Reparar Outlook no abre",
+    "category": "Office / Outlook",
+    "risk": "medio",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/48_reparar_outlook_no_abre.bat",
+      "ps1": "PS1/48_reparar_outlook_no_abre.ps1",
+      "readme": "README/48_reparar_outlook_no_abre.md"
+    }
+  },
+  {
+    "id": "v5-pro-49-recrear-perfil-outlook-asistido",
+    "name": "V5.4 Pro - Recrear perfil Outlook asistido",
+    "category": "Office / Outlook",
+    "risk": "medio",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/49_recrear_perfil_outlook_asistido.bat",
+      "ps1": "PS1/49_recrear_perfil_outlook_asistido.ps1",
+      "readme": "README/49_recrear_perfil_outlook_asistido.md"
+    }
+  },
+  {
+    "id": "v5-pro-50-limpiar-roamcache-outlook",
+    "name": "V5.4 Pro - Limpiar RoamCache Outlook",
+    "category": "Office / Outlook",
+    "risk": "medio",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/50_limpiar_roamcache_outlook.bat",
+      "ps1": "PS1/50_limpiar_roamcache_outlook.ps1",
+      "readme": "README/50_limpiar_roamcache_outlook.md"
+    }
+  },
+  {
+    "id": "v5-pro-51-limpiar-autocomplete-outlook",
+    "name": "V5.4 Pro - Limpiar Autocomplete Outlook",
+    "category": "Office / Outlook",
+    "risk": "medio",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/51_limpiar_autocomplete_outlook.bat",
+      "ps1": "PS1/51_limpiar_autocomplete_outlook.ps1",
+      "readme": "README/51_limpiar_autocomplete_outlook.md"
+    }
+  },
+  {
+    "id": "v5-pro-52-reparar-indexacion-outlook",
+    "name": "V5.4 Pro - Reparar indexación Outlook",
+    "category": "Office / Outlook",
+    "risk": "medio",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/52_reparar_indexacion_outlook.bat",
+      "ps1": "PS1/52_reparar_indexacion_outlook.ps1",
+      "readme": "README/52_reparar_indexacion_outlook.md"
+    }
+  },
+  {
+    "id": "v5-pro-53-ver-addins-outlook-loadbehavior",
+    "name": "V5.4 Pro - Ver Add-ins Outlook LoadBehavior",
+    "category": "Office / Outlook",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/53_ver_add_ins_outlook_loadbehavior.bat",
+      "ps1": "PS1/53_ver_add_ins_outlook_loadbehavior.ps1",
+      "readme": "README/53_ver_add_ins_outlook_loadbehavior.md"
+    }
+  },
+  {
+    "id": "v5-pro-54-habilitar-addin-outlook-concreto",
+    "name": "V5.4 Pro - Habilitar Add-in Outlook concreto",
+    "category": "Office / Outlook",
+    "risk": "alto",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/54_habilitar_add_in_outlook_concreto.bat",
+      "ps1": "PS1/54_habilitar_add_in_outlook_concreto.ps1",
+      "readme": "README/54_habilitar_add_in_outlook_concreto.md"
+    }
+  },
+  {
+    "id": "v5-pro-55-diagnostico-licencia-office",
+    "name": "V5.4 Pro - Diagnóstico licencia Office",
+    "category": "Office / Outlook",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/55_diagnostico_licencia_office.bat",
+      "ps1": "PS1/55_diagnostico_licencia_office.ps1",
+      "readme": "README/55_diagnostico_licencia_office.md"
+    }
+  },
+  {
+    "id": "v5-pro-56-forzar-actualizacion-office-c2r",
+    "name": "V5.4 Pro - Forzar actualización Office C2R",
+    "category": "Office / Outlook",
+    "risk": "medio",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/56_forzar_actualizacion_office_c2r.bat",
+      "ps1": "PS1/56_forzar_actualizacion_office_c2r.ps1",
+      "readme": "README/56_forzar_actualizacion_office_c2r.md"
+    }
+  },
+  {
+    "id": "v5-pro-57-diagnostico-teams-new-classic",
+    "name": "V5.4 Pro - Diagnóstico Teams clásico/nuevo",
+    "category": "Teams",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/57_diagnostico_teams_clasico_nuevo.bat",
+      "ps1": "PS1/57_diagnostico_teams_clasico_nuevo.ps1",
+      "readme": "README/57_diagnostico_teams_clasico_nuevo.md"
+    }
+  },
+  {
+    "id": "v5-pro-58-reparar-webview2-runtime",
+    "name": "V5.4 Pro - Reparar WebView2 Runtime",
+    "category": "Teams",
+    "risk": "medio",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/58_reparar_webview2_runtime.bat",
+      "ps1": "PS1/58_reparar_webview2_runtime.ps1",
+      "readme": "README/58_reparar_webview2_runtime.md"
+    }
+  },
+  {
+    "id": "v5-pro-59-ver-rutas-teams-addin",
+    "name": "V5.4 Pro - Ver rutas Teams Add-in",
+    "category": "Teams",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/59_ver_rutas_teams_add_in.bat",
+      "ps1": "PS1/59_ver_rutas_teams_add_in.ps1",
+      "readme": "README/59_ver_rutas_teams_add_in.md"
+    }
+  },
+  {
+    "id": "v5-pro-60-reparar-loadbehavior-teams-addin",
+    "name": "V5.4 Pro - Reparar LoadBehavior Teams Add-in",
+    "category": "Teams",
+    "risk": "alto",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/60_reparar_loadbehavior_teams_add_in.bat",
+      "ps1": "PS1/60_reparar_loadbehavior_teams_add_in.ps1",
+      "readme": "README/60_reparar_loadbehavior_teams_add_in.md"
+    }
+  },
+  {
+    "id": "v5-pro-61-exportar-logs-teams-addin",
+    "name": "V5.4 Pro - Exportar logs Teams Add-in",
+    "category": "Teams",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/61_exportar_logs_teams_add_in.bat",
+      "ps1": "PS1/61_exportar_logs_teams_add_in.ps1",
+      "readme": "README/61_exportar_logs_teams_add_in.md"
+    }
+  },
+  {
+    "id": "v5-pro-62-limpiar-cache-new-teams-seguro",
+    "name": "V5.4 Pro - Limpiar caché New Teams seguro",
+    "category": "Teams",
+    "risk": "medio",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/62_limpiar_cache_new_teams_seguro.bat",
+      "ps1": "PS1/62_limpiar_cache_new_teams_seguro.ps1",
+      "readme": "README/62_limpiar_cache_new_teams_seguro.md"
+    }
+  },
+  {
+    "id": "v5-pro-63-reinstalar-teams-usuario",
+    "name": "V5.4 Pro - Reinstalar Teams por usuario",
+    "category": "Teams",
+    "risk": "alto",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/63_reinstalar_teams_por_usuario.bat",
+      "ps1": "PS1/63_reinstalar_teams_por_usuario.ps1",
+      "readme": "README/63_reinstalar_teams_por_usuario.md"
+    }
+  },
+  {
+    "id": "v5-pro-64-diagnostico-reunion-teams-outlook",
+    "name": "V5.4 Pro - Diagnóstico reunión Teams/Outlook",
+    "category": "Teams",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/64_diagnostico_reunion_teams_outlook.bat",
+      "ps1": "PS1/64_diagnostico_reunion_teams_outlook.ps1",
+      "readme": "README/64_diagnostico_reunion_teams_outlook.md"
+    }
+  },
+  {
+    "id": "v5-pro-65-diagnostico-entra-id-dsregcmd",
+    "name": "V5.4 Pro - Diagnóstico Entra ID dsregcmd",
+    "category": "Intune / Autopilot",
+    "risk": "bajo",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/65_diagnostico_entra_id_dsregcmd.bat",
+      "ps1": "PS1/65_diagnostico_entra_id_dsregcmd.ps1",
+      "readme": "README/65_diagnostico_entra_id_dsregcmd.md"
+    }
+  },
+  {
+    "id": "v5-pro-66-exportar-dsregcmd-html",
+    "name": "V5.4 Pro - Exportar dsregcmd HTML",
+    "category": "Intune / Autopilot",
+    "risk": "bajo",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/66_exportar_dsregcmd_html.bat",
+      "ps1": "PS1/66_exportar_dsregcmd_html.ps1",
+      "readme": "README/66_exportar_dsregcmd_html.md"
+    }
+  },
+  {
+    "id": "v5-pro-67-diagnostico-intune-ime",
+    "name": "V5.4 Pro - Diagnóstico Intune IME",
+    "category": "Intune / Autopilot",
+    "risk": "bajo",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/67_diagnostico_intune_ime.bat",
+      "ps1": "PS1/67_diagnostico_intune_ime.ps1",
+      "readme": "README/67_diagnostico_intune_ime.md"
+    }
+  },
+  {
+    "id": "v5-pro-68-reiniciar-intune-management-extension",
+    "name": "V5.4 Pro - Reiniciar Intune Management Extension",
+    "category": "Intune / Autopilot",
+    "risk": "medio",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/68_reiniciar_intune_management_extension.bat",
+      "ps1": "PS1/68_reiniciar_intune_management_extension.ps1",
+      "readme": "README/68_reiniciar_intune_management_extension.md"
+    }
+  },
+  {
+    "id": "v5-pro-69-forzar-sync-company-portal",
+    "name": "V5.4 Pro - Forzar sync Company Portal",
+    "category": "Intune / Autopilot",
+    "risk": "medio",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/69_forzar_sync_company_portal.bat",
+      "ps1": "PS1/69_forzar_sync_company_portal.ps1",
+      "readme": "README/69_forzar_sync_company_portal.md"
+    }
+  },
+  {
+    "id": "v5-pro-70-exportar-logs-intune-completo",
+    "name": "V5.4 Pro - Exportar logs Intune completo",
+    "category": "Intune / Autopilot",
+    "risk": "bajo",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/70_exportar_logs_intune_completo.bat",
+      "ps1": "PS1/70_exportar_logs_intune_completo.ps1",
+      "readme": "README/70_exportar_logs_intune_completo.md"
+    }
+  },
+  {
+    "id": "v5-pro-71-diagnostico-autopilot-esp",
+    "name": "V5.4 Pro - Diagnóstico Autopilot ESP",
+    "category": "Intune / Autopilot",
+    "risk": "bajo",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/71_diagnostico_autopilot_esp.bat",
+      "ps1": "PS1/71_diagnostico_autopilot_esp.ps1",
+      "readme": "README/71_diagnostico_autopilot_esp.md"
+    }
+  },
+  {
+    "id": "v5-pro-72-comprobar-estado-mdm",
+    "name": "V5.4 Pro - Comprobar estado MDM",
+    "category": "Intune / Autopilot",
+    "risk": "bajo",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/72_comprobar_estado_mdm.bat",
+      "ps1": "PS1/72_comprobar_estado_mdm.ps1",
+      "readme": "README/72_comprobar_estado_mdm.md"
+    }
+  },
+  {
+    "id": "v5-pro-73-reparar-ccmexec",
+    "name": "V5.4 Pro - Reparar CCMExec",
+    "category": "SCCM",
+    "risk": "medio",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/73_reparar_ccmexec.bat",
+      "ps1": "PS1/73_reparar_ccmexec.ps1",
+      "readme": "README/73_reparar_ccmexec.md"
+    }
+  },
+  {
+    "id": "v5-pro-74-forzar-acciones-sccm",
+    "name": "V5.4 Pro - Forzar acciones SCCM",
+    "category": "SCCM",
+    "risk": "medio",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/74_forzar_acciones_sccm.bat",
+      "ps1": "PS1/74_forzar_acciones_sccm.ps1",
+      "readme": "README/74_forzar_acciones_sccm.md"
+    }
+  },
+  {
+    "id": "v5-pro-75-limpiar-cache-sccm",
+    "name": "V5.4 Pro - Limpiar caché SCCM",
+    "category": "SCCM",
+    "risk": "alto",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/75_limpiar_cache_sccm.bat",
+      "ps1": "PS1/75_limpiar_cache_sccm.ps1",
+      "readme": "README/75_limpiar_cache_sccm.md"
+    }
+  },
+  {
+    "id": "v5-pro-76-exportar-logs-sccm-completo",
+    "name": "V5.4 Pro - Exportar logs SCCM completo",
+    "category": "SCCM",
+    "risk": "bajo",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/76_exportar_logs_sccm_completo.bat",
+      "ps1": "PS1/76_exportar_logs_sccm_completo.ps1",
+      "readme": "README/76_exportar_logs_sccm_completo.md"
+    }
+  },
+  {
+    "id": "v5-pro-77-diagnostico-cliente-sccm",
+    "name": "V5.4 Pro - Diagnóstico cliente SCCM",
+    "category": "SCCM",
+    "risk": "bajo",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/77_diagnostico_cliente_sccm.bat",
+      "ps1": "PS1/77_diagnostico_cliente_sccm.ps1",
+      "readme": "README/77_diagnostico_cliente_sccm.md"
+    }
+  },
+  {
+    "id": "v5-pro-78-abrir-software-center",
+    "name": "V5.4 Pro - Abrir Software Center",
+    "category": "SCCM",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/78_abrir_software_center.bat",
+      "ps1": "PS1/78_abrir_software_center.ps1",
+      "readme": "README/78_abrir_software_center.md"
+    }
+  },
+  {
+    "id": "v5-pro-79-diagnostico-impresoras-completo",
+    "name": "V5.4 Pro - Diagnóstico impresoras completo",
+    "category": "Impresoras",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/79_diagnostico_impresoras_completo.bat",
+      "ps1": "PS1/79_diagnostico_impresoras_completo.ps1",
+      "readme": "README/79_diagnostico_impresoras_completo.md"
+    }
+  },
+  {
+    "id": "v5-pro-80-instalar-impresora-red",
+    "name": "V5.4 Pro - Instalar impresora de red",
+    "category": "Impresoras",
+    "risk": "medio",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/80_instalar_impresora_de_red.bat",
+      "ps1": "PS1/80_instalar_impresora_de_red.ps1",
+      "readme": "README/80_instalar_impresora_de_red.md"
+    }
+  },
+  {
+    "id": "v5-pro-81-eliminar-impresoras-red",
+    "name": "V5.4 Pro - Eliminar impresoras de red",
+    "category": "Impresoras",
+    "risk": "alto",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/81_eliminar_impresoras_de_red.bat",
+      "ps1": "PS1/81_eliminar_impresoras_de_red.ps1",
+      "readme": "README/81_eliminar_impresoras_de_red.md"
+    }
+  },
+  {
+    "id": "v5-pro-82-limpiar-spooler-avanzado",
+    "name": "V5.4 Pro - Limpiar Spooler avanzado",
+    "category": "Impresoras",
+    "risk": "alto",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/82_limpiar_spooler_avanzado.bat",
+      "ps1": "PS1/82_limpiar_spooler_avanzado.ps1",
+      "readme": "README/82_limpiar_spooler_avanzado.md"
+    }
+  },
+  {
+    "id": "v5-pro-83-exportar-drivers-impresora",
+    "name": "V5.4 Pro - Exportar drivers impresora",
+    "category": "Impresoras",
+    "risk": "bajo",
+    "requiresAdmin": true,
+    "files": {
+      "bat": "BAT/83_exportar_drivers_impresora.bat",
+      "ps1": "PS1/83_exportar_drivers_impresora.ps1",
+      "readme": "README/83_exportar_drivers_impresora.md"
+    }
+  },
+  {
+    "id": "v5-pro-84-generar-informe-html-ticket",
+    "name": "V5.4 Pro - Generar informe HTML ticket",
+    "category": "Tickets CAU",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/84_generar_informe_html_ticket.bat",
+      "ps1": "PS1/84_generar_informe_html_ticket.ps1",
+      "readme": "README/84_generar_informe_html_ticket.md"
+    }
+  },
+  {
+    "id": "v5-pro-85-generar-zip-evidencias-cau",
+    "name": "V5.4 Pro - Generar ZIP evidencias CAU",
+    "category": "Tickets CAU",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/85_generar_zip_evidencias_cau.bat",
+      "ps1": "PS1/85_generar_zip_evidencias_cau.ps1",
+      "readme": "README/85_generar_zip_evidencias_cau.md"
+    }
+  },
+  {
+    "id": "v5-pro-86-copiar-resumen-diagnostico-portapapeles",
+    "name": "V5.4 Pro - Copiar resumen diagnóstico al portapapeles",
+    "category": "Tickets CAU",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/86_copiar_resumen_diagnostico_al_portapapeles.bat",
+      "ps1": "PS1/86_copiar_resumen_diagnostico_al_portapapeles.ps1",
+      "readme": "README/86_copiar_resumen_diagnostico_al_portapapeles.md"
+    }
+  },
+  {
+    "id": "v5-pro-87-checklist-outlook-no-abre",
+    "name": "V5.4 Pro - Checklist Outlook no abre",
+    "category": "Tickets CAU",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/87_checklist_outlook_no_abre.bat",
+      "ps1": "PS1/87_checklist_outlook_no_abre.ps1",
+      "readme": "README/87_checklist_outlook_no_abre.md"
+    }
+  },
+  {
+    "id": "v5-pro-88-checklist-sin-red",
+    "name": "V5.4 Pro - Checklist sin red",
+    "category": "Tickets CAU",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/88_checklist_sin_red.bat",
+      "ps1": "PS1/88_checklist_sin_red.ps1",
+      "readme": "README/88_checklist_sin_red.md"
+    }
+  },
+  {
+    "id": "v5-pro-89-checklist-no-imprime",
+    "name": "V5.4 Pro - Checklist no imprime",
+    "category": "Tickets CAU",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/89_checklist_no_imprime.bat",
+      "ps1": "PS1/89_checklist_no_imprime.ps1",
+      "readme": "README/89_checklist_no_imprime.md"
+    }
+  },
+  {
+    "id": "v5-pro-90-plantilla-cierre-ticket",
+    "name": "V5.4 Pro - Plantilla cierre ticket",
+    "category": "Tickets CAU",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "files": {
+      "bat": "BAT/90_plantilla_cierre_ticket.bat",
+      "ps1": "PS1/90_plantilla_cierre_ticket.ps1",
+      "readme": "README/90_plantilla_cierre_ticket.md"
+    }
+  }
+]

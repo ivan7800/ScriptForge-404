@@ -1,0 +1,46 @@
+# V5.4 Pro - Instalar impresora de red
+
+**Categoria:** Impresoras  
+**Nivel de riesgo:** MEDIO  
+**Requiere administrador:** No  
+**Generado:** 2026-07-07 08:47:22  
+**Tecnico:** CAU  
+**Cliente/equipo:** EQUIPO  
+**Version del script:** 5.4-standalone  
+
+## Descripcion
+Instala impresora de red por ruta UNC y opcionalmente la establece como predeterminada.
+
+## Que hace este script
+Genera comandos BAT y PS1 basados en la plantilla "V5.4 Pro - Instalar impresora de red" con las opciones configuradas por el usuario en ScriptForge 404.
+
+## Motivos del nivel de riesgo
+- Plantilla V5.4 Pro con cambios locales controlados si se activa reparacion.
+
+## Requisitos previos
+- Ejecutar primero en modo diagnóstico.
+- Confirmar autorización del usuario/equipo antes de aplicar cambios.
+
+## Posibilidad de rollback
+Eliminar impresora desde configuración o con Remove-Printer/Add-Printer según corresponda.
+
+## Advertencia
+Revisa siempre el contenido del script antes de ejecutarlo. Usalo unicamente en equipos donde tengas autorizacion. El autor de ScriptForge 404 no se responsabiliza de danos derivados de un uso indebido.
+
+CHECKLIST - V5.4 Pro - Instalar impresora de red
+============================================================
+
+ANTES DE EJECUTAR:
+  [ ] 1. Ejecutar primero en modo diagnóstico.
+  [ ] 2. Confirmar autorización del usuario/equipo antes de aplicar cambios.
+
+DESPUES DE EJECUTAR:
+  [ ] 1. Revisar logs generados en la carpeta de salida.
+  [ ] 2. Validar con el usuario que la incidencia queda resuelta.
+
+NIVEL DE RIESGO DETECTADO: MEDIO
+Motivos:
+  - Plantilla V5.4 Pro con cambios locales controlados si se activa reparacion.
+
+ROLLBACK:
+  Eliminar impresora desde configuración o con Remove-Printer/Add-Printer según corresponda.
