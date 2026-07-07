@@ -1,0 +1,272 @@
+[
+  {
+    "id": "v5-pro-01-diagnostico-rapido-pc",
+    "name": "V5 Pro - Diagnostico rapido PC",
+    "category": "Diagnostico",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "bat": "scripts_standalone/V5_Pro/BAT/01_diagnostico_rapido_pc.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/01_diagnostico_rapido_pc.ps1"
+  },
+  {
+    "id": "v5-pro-02-informe-completo-ticket",
+    "name": "V5 Pro - Informe completo para ticket",
+    "category": "Tickets CAU",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "bat": "scripts_standalone/V5_Pro/BAT/02_informe_completo_ticket.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/02_informe_completo_ticket.ps1"
+  },
+  {
+    "id": "v5-pro-03-reparar-red-basica",
+    "name": "V5 Pro - Reparar red basica",
+    "category": "Red",
+    "risk": "medio",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/03_reparar_red_basica.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/03_reparar_red_basica.ps1"
+  },
+  {
+    "id": "v5-pro-04-reset-dns-winsock-tcpip",
+    "name": "V5 Pro - Reset DNS Winsock TCP/IP",
+    "category": "Red",
+    "risk": "alto",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/04_reset_dns_winsock_tcpip.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/04_reset_dns_winsock_tcpip.ps1"
+  },
+  {
+    "id": "v5-pro-05-mapear-unidades-red",
+    "name": "V5 Pro - Mapear unidades de red",
+    "category": "Unidades de red",
+    "risk": "medio",
+    "requiresAdmin": false,
+    "bat": "scripts_standalone/V5_Pro/BAT/05_mapear_unidades_red.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/05_mapear_unidades_red.ps1"
+  },
+  {
+    "id": "v5-pro-06-reparar-unidades-red",
+    "name": "V5 Pro - Reparar unidades de red",
+    "category": "Unidades de red",
+    "risk": "medio",
+    "requiresAdmin": false,
+    "bat": "scripts_standalone/V5_Pro/BAT/06_reparar_unidades_red.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/06_reparar_unidades_red.ps1"
+  },
+  {
+    "id": "v5-pro-07-reparar-outlook-basico",
+    "name": "V5 Pro - Reparar Outlook basico",
+    "category": "Office / Outlook",
+    "risk": "medio",
+    "requiresAdmin": false,
+    "bat": "scripts_standalone/V5_Pro/BAT/07_reparar_outlook_basico.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/07_reparar_outlook_basico.ps1"
+  },
+  {
+    "id": "v5-pro-08-reparar-outlook-avanzado",
+    "name": "V5 Pro - Reparar Outlook avanzado",
+    "category": "Office / Outlook",
+    "risk": "alto",
+    "requiresAdmin": false,
+    "bat": "scripts_standalone/V5_Pro/BAT/08_reparar_outlook_avanzado.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/08_reparar_outlook_avanzado.ps1"
+  },
+  {
+    "id": "v5-pro-09-reparar-boton-teams-outlook",
+    "name": "V5 Pro - Reparar boton Teams Meeting en Outlook",
+    "category": "Teams",
+    "risk": "alto",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/09_reparar_boton_teams_outlook.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/09_reparar_boton_teams_outlook.ps1"
+  },
+  {
+    "id": "v5-pro-10-limpiar-cache-teams",
+    "name": "V5 Pro - Limpiar cache Teams",
+    "category": "Teams",
+    "risk": "medio",
+    "requiresAdmin": false,
+    "bat": "scripts_standalone/V5_Pro/BAT/10_limpiar_cache_teams.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/10_limpiar_cache_teams.ps1"
+  },
+  {
+    "id": "v5-pro-11-reparar-teams-completo",
+    "name": "V5 Pro - Reparar Teams completo",
+    "category": "Teams",
+    "risk": "alto",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/11_reparar_teams_completo.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/11_reparar_teams_completo.ps1"
+  },
+  {
+    "id": "v5-pro-12-reiniciar-cola-impresion",
+    "name": "V5 Pro - Reiniciar cola de impresion",
+    "category": "Impresoras",
+    "risk": "medio",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/12_reiniciar_cola_impresion.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/12_reiniciar_cola_impresion.ps1"
+  },
+  {
+    "id": "v5-pro-13-reparar-impresoras",
+    "name": "V5 Pro - Reparar impresoras",
+    "category": "Impresoras",
+    "risk": "alto",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/13_reparar_impresoras.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/13_reparar_impresoras.ps1"
+  },
+  {
+    "id": "v5-pro-14-limpieza-temporales",
+    "name": "V5 Pro - Limpieza temporales",
+    "category": "Limpieza",
+    "risk": "medio",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/14_limpieza_temporales.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/14_limpieza_temporales.ps1"
+  },
+  {
+    "id": "v5-pro-15-limpieza-avanzada-pc",
+    "name": "V5 Pro - Limpieza avanzada PC",
+    "category": "Rendimiento",
+    "risk": "alto",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/15_limpieza_avanzada_pc.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/15_limpieza_avanzada_pc.ps1"
+  },
+  {
+    "id": "v5-pro-16-sfc-dism-reparacion-windows",
+    "name": "V5 Pro - SFC DISM reparacion Windows",
+    "category": "Sistema",
+    "risk": "medio",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/16_sfc_dism_reparacion_windows.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/16_sfc_dism_reparacion_windows.ps1"
+  },
+  {
+    "id": "v5-pro-17-reset-windows-update",
+    "name": "V5 Pro - Reset Windows Update",
+    "category": "Windows Update",
+    "risk": "alto",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/17_reset_windows_update.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/17_reset_windows_update.ps1"
+  },
+  {
+    "id": "v5-pro-18-diagnostico-office-365",
+    "name": "V5 Pro - Diagnostico Office 365",
+    "category": "Office / Outlook",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "bat": "scripts_standalone/V5_Pro/BAT/18_diagnostico_office_365.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/18_diagnostico_office_365.ps1"
+  },
+  {
+    "id": "v5-pro-19-reset-onedrive",
+    "name": "V5 Pro - Reset OneDrive",
+    "category": "OneDrive",
+    "risk": "medio",
+    "requiresAdmin": false,
+    "bat": "scripts_standalone/V5_Pro/BAT/19_reset_onedrive.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/19_reset_onedrive.ps1"
+  },
+  {
+    "id": "v5-pro-20-diagnostico-citrix-ica",
+    "name": "V5 Pro - Diagnostico Citrix ICA",
+    "category": "Citrix / VPN",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "bat": "scripts_standalone/V5_Pro/BAT/20_diagnostico_citrix_ica.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/20_diagnostico_citrix_ica.ps1"
+  },
+  {
+    "id": "v5-pro-21-reparar-asociacion-ica",
+    "name": "V5 Pro - Reparar asociacion ICA",
+    "category": "Citrix / VPN",
+    "risk": "medio",
+    "requiresAdmin": false,
+    "bat": "scripts_standalone/V5_Pro/BAT/21_reparar_asociacion_ica.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/21_reparar_asociacion_ica.ps1"
+  },
+  {
+    "id": "v5-pro-22-diagnostico-intune-autopilot",
+    "name": "V5 Pro - Diagnostico Intune Autopilot",
+    "category": "Intune / Autopilot",
+    "risk": "bajo",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/22_diagnostico_intune_autopilot.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/22_diagnostico_intune_autopilot.ps1"
+  },
+  {
+    "id": "v5-pro-23-forzar-sync-intune",
+    "name": "V5 Pro - Forzar sincronizacion Intune",
+    "category": "Intune / Autopilot",
+    "risk": "medio",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/23_forzar_sync_intune.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/23_forzar_sync_intune.ps1"
+  },
+  {
+    "id": "v5-pro-24-reparar-cliente-sccm",
+    "name": "V5 Pro - Reparar cliente SCCM",
+    "category": "SCCM",
+    "risk": "alto",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/24_reparar_cliente_sccm.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/24_reparar_cliente_sccm.ps1"
+  },
+  {
+    "id": "v5-pro-25-exportar-logs-sccm-intune",
+    "name": "V5 Pro - Exportar logs SCCM Intune",
+    "category": "Logs / Eventos",
+    "risk": "bajo",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/25_exportar_logs_sccm_intune.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/25_exportar_logs_sccm_intune.ps1"
+  },
+  {
+    "id": "v5-pro-26-ver-programas-instalados",
+    "name": "V5 Pro - Ver programas instalados",
+    "category": "Software",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "bat": "scripts_standalone/V5_Pro/BAT/26_ver_programas_instalados.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/26_ver_programas_instalados.ps1"
+  },
+  {
+    "id": "v5-pro-27-desinstalar-programa",
+    "name": "V5 Pro - Desinstalar programa",
+    "category": "Software",
+    "risk": "alto",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/27_desinstalar_programa.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/27_desinstalar_programa.ps1"
+  },
+  {
+    "id": "v5-pro-28-diagnostico-defender-bitlocker",
+    "name": "V5 Pro - Diagnostico Defender BitLocker",
+    "category": "Seguridad",
+    "risk": "bajo",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/28_diagnostico_defender_bitlocker.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/28_diagnostico_defender_bitlocker.ps1"
+  },
+  {
+    "id": "v5-pro-29-generador-script-unidad-red",
+    "name": "V5 Pro - Generador script unidad de red",
+    "category": "Unidades de red",
+    "risk": "bajo",
+    "requiresAdmin": false,
+    "bat": "scripts_standalone/V5_Pro/BAT/29_generador_script_unidad_red.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/29_generador_script_unidad_red.ps1"
+  },
+  {
+    "id": "v5-pro-30-cau-toolkit-master",
+    "name": "V5 Pro - CAU Toolkit Master",
+    "category": "Base CAU",
+    "risk": "medio",
+    "requiresAdmin": true,
+    "bat": "scripts_standalone/V5_Pro/BAT/30_cau_toolkit_master.bat",
+    "ps1": "scripts_standalone/V5_Pro/PS1/30_cau_toolkit_master.ps1"
+  }
+]
