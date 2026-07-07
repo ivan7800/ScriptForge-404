@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apps Corporativas — Portal de Descargas | ScriptForge 404</title>
+<meta name="description" content="Portal rapido de descargas oficiales: utilidades, navegadores, comunicacion, productividad, seguridad, desarrollo y red. 100% local, sin backend." />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="manifest" href="site.webmanifest" />
+<meta name="theme-color" content="#0b0f14" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #F4F2EE;
+    --surface: #FAFAF8;
+    --surface2: #EEECEA;
+    --border: #D8D5CF;
+    --border2: #C5C1BA;
+    --text: #1A1916;
+    --text2: #6B6760;
+    --text3: #9E9A94;
+    --accent: #2D5BE3;
+    --accent-bg: #EEF2FD;
+    --accent-text: #1A3A9E;
+    --radius: 10px;
+    --radius-lg: 14px;
+    --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141412;
+      --surface: #1C1C1A;
+      --surface2: #242422;
+      --border: #2E2E2B;
+      --border2: #3A3A36;
+      --text: #F0EDE8;
+      --text2: #9E9A94;
+      --text3: #5C5A55;
+      --accent: #5B82F0;
+      --accent-bg: #1A2444;
+      --accent-text: #8BAAF5;
+    }
+  }
+
+  body[data-skin="dark-pro"] { --bg:#0b0f14; --surface:#121821; --surface2:#161d28; --border:#263140; --border2:#384454; --text:#e7edf3; --text2:#8fa0b3; --text3:#5c6b7d; --accent:#49c5d1; --accent-bg:#10262c; --accent-text:#7fe0ea; }
+  body[data-skin="gold"] { --bg:#14100a; --surface:#1c1610; --surface2:#221b12; --border:#3a2f1d; --border2:#574526; --text:#f3e9d2; --text2:#b8a37e; --text3:#7a6b4d; --accent:#d4af37; --accent-bg:#2b210a; --accent-text:#f0cf6b; }
+  body[data-skin="terminal"] { --bg:#050a06; --surface:#0a120b; --surface2:#0d160e; --border:#1d3a20; --border2:#2b5230; --text:#baf7c0; --text2:#6fae78; --text3:#43704a; --accent:#39ff6e; --accent-bg:#082a13; --accent-text:#8dffb0; }
+  body[data-skin="blue-sysadmin"] { --bg:#0a1220; --surface:#0f1b2e; --surface2:#122238; --border:#1e3a5c; --border2:#2a527f; --text:#dce8f7; --text2:#85a3c2; --text3:#4f6c8a; --accent:#3e8ef7; --accent-bg:#102a4f; --accent-text:#7db2ff; }
+  body[data-skin="red-alert"] { --bg:#120707; --surface:#1a0a0a; --surface2:#210d0d; --border:#3d1717; --border2:#5c2020; --text:#f7dede; --text2:#c98a8a; --text3:#8a5555; --accent:#ef4444; --accent-bg:#351010; --accent-text:#ff7a7a; }
+  body[data-skin="midnight"] { --bg:#060914; --surface:#0b1020; --surface2:#10172a; --border:#1f2a44; --border2:#34415f; --text:#eef2ff; --text2:#9aa7c7; --text3:#66718f; --accent:#8ab4ff; --accent-bg:#111d36; --accent-text:#b7d2ff; }
+  body[data-skin="matrix"] { --bg:#010403; --surface:#06100b; --surface2:#08170f; --border:#10351f; --border2:#1f6b3d; --text:#d9ffe2; --text2:#8ad69d; --text3:#4b8f5d; --accent:#00ff88; --accent-bg:#062614; --accent-text:#79ffbd; }
+  body[data-skin="violet"] { --bg:#100818; --surface:#180d25; --surface2:#211234; --border:#3b2359; --border2:#5d3b87; --text:#f2e7ff; --text2:#baa1d8; --text3:#80679d; --accent:#a855f7; --accent-bg:#25113d; --accent-text:#d8b4fe; }
+  body[data-skin="slate"] { --bg:#eef2f7; --surface:#ffffff; --surface2:#f8fafc; --border:#cbd5e1; --border2:#94a3b8; --text:#0f172a; --text2:#475569; --text3:#64748b; --accent:#2563eb; --accent-bg:#dbeafe; --accent-text:#1d4ed8; --shadow:0 8px 24px rgba(15,23,42,0.10); }
+  body[data-skin="cyberpunk"] { --bg:#090012; --surface:#140021; --surface2:#1f0733; --border:#4a1769; --border2:#7c2bb2; --text:#fff1ff; --text2:#d7a9ff; --text3:#9161b8; --accent:#00e5ff; --accent-bg:#201245; --accent-text:#ff3df2; }
+
+  body {
+    font-family: -apple-system, 'Segoe UI', system-ui, Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  /* HEADER */
+  .site-header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 1.25rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .site-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+    background: var(--text);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-icon svg { fill: var(--bg); width: 18px; height: 18px; }
+
+  .logo-name {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--text);
+  }
+
+  .logo-name span {
+    font-weight: 300;
+    color: var(--text2);
+  }
+
+  .header-actions { display:flex; align-items:center; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
+
+  .header-meta {
+    font-family: ui-monospace, 'Cascadia Code', 'Consolas', 'SFMono-Regular', Menlo, monospace;
+    font-size: 11px;
+    color: var(--text3);
+    letter-spacing: 0.05em;
+  }
+
+  .skin-select {
+    background: var(--surface2);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 12px;
+    outline: none;
+  }
+  .skin-select:focus { border-color: var(--accent); }
+
+  .back-link {
+    font-size: 12.5px;
+    color: var(--text2);
+    text-decoration: none;
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    transition: color 120ms ease, border-color 120ms ease;
+    white-space: nowrap;
+  }
+  .back-link:hover, .back-link:focus-visible {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+
+  /* MAIN LAYOUT */
+  .main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 2rem 4rem;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 2.5rem 0 2rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+
+  .hero h1 strong { font-weight: 500; }
+
+  .hero p {
+    font-size: 15px;
+    color: var(--text2);
+    max-width: 480px;
+    line-height: 1.6;
+  }
+
+  /* CONTROLS */
+  .controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .search-wrap {
+    position: relative;
+    flex: 1;
+    min-width: 220px;
+    max-width: 340px;
+  }
+
+  .search-wrap svg {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    stroke: var(--text3);
+    fill: none;
+    pointer-events: none;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 9px 12px 9px 34px;
+    font-family: -apple-system, 'Segoe UI', system-ui, Roboto, Arial, sans-serif;
+    font-size: 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    transition: border-color 0.15s;
+    outline: none;
+  }
+
+  .search-input::placeholder { color: var(--text3); }
+  .search-input:focus { border-color: var(--border2); }
+
+  .filters {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    font-family: -apple-system, 'Segoe UI', system-ui, Roboto, Arial, sans-serif;
+    font-size: 13px;
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--text2);
+    cursor: pointer;
+    transition: all 0.12s;
+    white-space: nowrap;
+  }
+
+  .filter-btn:hover {
+    border-color: var(--border2);
+    color: var(--text);
+    background: var(--surface);
+  }
+
+  .filter-btn.active {
+    background: var(--text);
+    color: var(--bg);
+    border-color: var(--text);
+    font-weight: 500;
+  }
+
+  /* STATS BAR */
+  .stats-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .stats-count {
+    font-family: ui-monospace, 'Cascadia Code', 'Consolas', 'SFMono-Regular', Menlo, monospace;
+    font-size: 12px;
+    color: var(--text3);
+  }
+
+  .stats-count span { color: var(--text); font-weight: 500; }
+
+  /* GRID */
+  .app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+
+  .app-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.1rem 1rem 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    animation: fadeIn 0.2s ease both;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .app-card:hover {
+    border-color: var(--border2);
+    box-shadow: var(--shadow);
+  }
+
+  .app-card.hidden { display: none; }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .app-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+    border: 1px solid var(--border);
+  }
+
+  .app-meta { flex: 1; min-width: 0; }
+
+  .app-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .app-tag {
+    display: inline-block;
+    font-size: 11px;
+    padding: 1px 7px;
+    border-radius: 4px;
+    background: var(--surface2);
+    color: var(--text3);
+    margin-top: 2px;
+    letter-spacing: 0.01em;
+  }
+
+  .app-desc {
+    font-size: 12.5px;
+    color: var(--text2);
+    line-height: 1.45;
+    padding-top: 2px;
+  }
+
+  .app-platform {
+    font-family: ui-monospace, 'Cascadia Code', 'Consolas', 'SFMono-Regular', Menlo, monospace;
+    font-size: 10px;
+    color: var(--text3);
+    letter-spacing: 0.03em;
+  }
+
+  .dl-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 7px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: transparent;
+    color: var(--text);
+    font-family: -apple-system, 'Segoe UI', system-ui, Roboto, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 4px;
+    transition: all 0.12s;
+  }
+
+  .dl-btn svg {
+    width: 14px;
+    height: 14px;
+    stroke: currentColor;
+    fill: none;
+    flex-shrink: 0;
+  }
+
+  .dl-btn:hover {
+    background: var(--accent-bg);
+    border-color: var(--accent);
+    color: var(--accent-text);
+  }
+
+  /* SECTION LABELS */
+  .section-label {
+    font-family: ui-monospace, 'Cascadia Code', 'Consolas', 'SFMono-Regular', Menlo, monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--text3);
+    text-transform: uppercase;
+    margin: 2rem 0 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* NO RESULTS */
+  .no-results {
+    text-align: center;
+    padding: 3rem 0;
+    color: var(--text3);
+    font-size: 14px;
+    display: none;
+  }
+
+  /* FOOTER */
+  .site-footer {
+    border-top: 1px solid var(--border);
+    padding: 1.25rem 2rem;
+    text-align: center;
+    font-size: 12px;
+    color: var(--text3);
+    margin-top: 3rem;
+    font-family: ui-monospace, 'Cascadia Code', 'Consolas', 'SFMono-Regular', Menlo, monospace;
+    letter-spacing: 0.03em;
+  }
+</style>
+<!-- v5.3 Control Center Premium polish -->
+<style>
+  body {
+    background:
+      radial-gradient(circle at 18% -10%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 36%),
+      radial-gradient(circle at 90% 0%, color-mix(in srgb, var(--accent-text) 10%, transparent), transparent 30%),
+      var(--bg);
+    background-attachment: fixed;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: .12;
+    background-image:
+      linear-gradient(color-mix(in srgb, var(--accent) 24%, transparent) 1px, transparent 1px),
+      linear-gradient(90deg, color-mix(in srgb, var(--accent) 24%, transparent) 1px, transparent 1px);
+    background-size: 58px 58px;
+    mask-image: radial-gradient(circle at 50% 0%, #000 0, transparent 70%);
+  }
+  .site-header {
+    background: color-mix(in srgb, var(--surface) 82%, transparent);
+    backdrop-filter: blur(18px);
+    border-bottom-color: color-mix(in srgb, var(--accent) 26%, var(--border));
+    box-shadow: 0 14px 40px rgba(0,0,0,.18);
+  }
+  .logo-icon {
+    background: linear-gradient(135deg, var(--surface2), color-mix(in srgb, var(--accent) 22%, var(--surface2)));
+    border: 1px solid color-mix(in srgb, var(--accent) 42%, var(--border));
+    box-shadow: 0 0 22px color-mix(in srgb, var(--accent) 22%, transparent);
+  }
+  .logo-icon svg { fill: var(--accent-text); }
+  .hero {
+    border: 1px solid color-mix(in srgb, var(--accent) 22%, var(--border));
+    border-radius: 24px;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    margin-top: 1.6rem;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 88%, transparent), color-mix(in srgb, var(--surface2) 70%, transparent));
+    box-shadow: 0 24px 70px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.05);
+  }
+  .hero h1 { font-weight: 750; letter-spacing: -.055em; }
+  .app-card {
+    border-radius: 18px;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 90%, transparent), color-mix(in srgb, var(--surface2) 72%, transparent));
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+  }
+  .app-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 18px 42px color-mix(in srgb, var(--accent) 12%, transparent);
+    transform: translateY(-2px);
+  }
+  .dl-btn {
+    border-radius: 12px;
+  }
+</style>
+
+</head>
+<body data-skin="dark-pro">
+
+<header class="site-header">
+  <div class="site-logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="7" height="7" rx="1.5"/>
+        <rect x="11" y="2" width="7" height="7" rx="1.5"/>
+        <rect x="2" y="11" width="7" height="7" rx="1.5"/>
+        <rect x="11" y="11" width="7" height="7" rx="1.5"/>
+      </svg>
+    </div>
+    <div class="logo-name">Apps <span>/ Portal Corporativo</span></div>
+  </div>
+  <a class="back-link" href="index.html" aria-label="Volver a ScriptForge 404">← ScriptForge 404</a>
+  <div class="header-actions"><select id="skin-select" class="skin-select" aria-label="Cambiar skin visual"></select><div class="header-meta" id="header-count">Cargando...</div></div>
+</header>
+
+<main class="main">
+  <div class="hero">
+    <h1>Descargas<br><strong>corporativas</strong></h1>
+    <p>Acceso directo a fuentes oficiales de utilidades habituales para soporte. Valida siempre la política interna antes de instalar en entorno corporativo.</p>
+  </div>
+
+  <div class="controls">
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <label for="search" class="sr-only">Buscar aplicación</label>
+      <input class="search-input" id="search" type="text" placeholder="Buscar aplicación..." autocomplete="off" aria-label="Buscar aplicación" />
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filtrar por categoría"></div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stats-count" id="count-label"></div>
+  </div>
+
+  <div class="app-grid" id="grid"></div>
+  <div class="no-results" id="no-results">No se encontraron aplicaciones para esa búsqueda.</div>
+</main>
+
+<footer class="site-footer">
+  Todas las descargas van a la web oficial del fabricante — valida políticas internas antes de instalar &middot; <span id="year"></span>
+</footer>
+
+<script>
+const APP_SKINS = [
+  ['dark-pro','Dark Pro'], ['gold','Gold'], ['terminal','Terminal'], ['blue-sysadmin','Blue SysAdmin'], ['red-alert','Red Alert'],
+  ['midnight','Midnight'], ['matrix','Matrix'], ['violet','Violet Ops'], ['slate','Slate Light'], ['cyberpunk','Cyberpunk']
+];
+function getSavedSkin(){
+  try { return (JSON.parse(localStorage.getItem('scriptforge_config') || '{}').skin) || 'dark-pro'; }
+  catch(e){ return 'dark-pro'; }
+}
+function saveSkin(skin){
+  document.body.setAttribute('data-skin', skin);
+  try {
+    const cfg = JSON.parse(localStorage.getItem('scriptforge_config') || '{}');
+    cfg.skin = skin;
+    localStorage.setItem('scriptforge_config', JSON.stringify(cfg));
+  } catch(e) {}
+}
+const savedSkin = getSavedSkin();
+document.body.setAttribute('data-skin', savedSkin);
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const apps = [
+  // UTILIDADES
+  { name:"7-Zip", desc:"Compresor de archivos open source", icon:"🗜️", bg:"#EBF4FF", tag:"Utilidades", platform:"Windows", url:"https://www.7-zip.org/download.html" },
+  { name:"WinRAR", desc:"Gestor de archivos ZIP, RAR y más", icon:"📦", bg:"#F3E5F5", tag:"Utilidades", platform:"Windows", url:"https://www.rarlab.com/download.htm" },
+  { name:"TeamViewer", desc:"Acceso y control remoto", icon:"🖥️", bg:"#E1F5FE", tag:"Utilidades", platform:"Win / Mac / Linux", url:"https://www.teamviewer.com/download/" },
+  { name:"AnyDesk", desc:"Escritorio remoto ligero", icon:"🔗", bg:"#FBE9E7", tag:"Utilidades", platform:"Win / Mac / Linux", url:"https://anydesk.com/download" },
+  { name:"Everything", desc:"Búsqueda ultrarrápida de archivos", icon:"🔍", bg:"#FFF8E1", tag:"Utilidades", platform:"Windows", url:"https://www.voidtools.com/downloads/" },
+  { name:"TreeSize Free", desc:"Analizador de espacio en disco", icon:"💾", bg:"#E8F5E9", tag:"Utilidades", platform:"Windows", url:"https://www.jam-software.com/treesize_free" },
+  { name:"CrystalDiskInfo", desc:"Monitor de salud de discos", icon:"🔮", bg:"#EDE7F6", tag:"Utilidades", platform:"Windows", url:"https://crystalmark.info/en/software/crystaldiskinfo/" },
+  { name:"CPU-Z", desc:"Info detallada del hardware", icon:"⚙️", bg:"#F1F8E9", tag:"Utilidades", platform:"Windows", url:"https://www.cpuid.com/softwares/cpu-z.html" },
+
+  // NAVEGADORES
+  { name:"Google Chrome", desc:"Navegador rápido de Google", icon:"🌐", bg:"#FEF3E2", tag:"Navegadores", platform:"Win / Mac / Linux", url:"https://www.google.com/chrome/" },
+  { name:"Mozilla Firefox", desc:"Navegador libre y privado", icon:"🦊", bg:"#FFF0E0", tag:"Navegadores", platform:"Win / Mac / Linux", url:"https://www.mozilla.org/firefox/new/" },
+  { name:"Microsoft Edge", desc:"Navegador corporativo de Microsoft", icon:"🔷", bg:"#E8F0FE", tag:"Navegadores", platform:"Win / Mac", url:"https://www.microsoft.com/edge" },
+
+  // COMUNICACIÓN
+  { name:"Zoom", desc:"Videollamadas y webinars", icon:"📹", bg:"#E8F0FE", tag:"Comunicación", platform:"Win / Mac", url:"https://zoom.us/download" },
+  { name:"Microsoft Teams", desc:"Colaboración y chat corporativo", icon:"💼", bg:"#EDE7F6", tag:"Comunicación", platform:"Win / Mac", url:"https://www.microsoft.com/microsoft-teams/download-app" },
+  { name:"Slack", desc:"Mensajería de equipo", icon:"💬", bg:"#F0EDFF", tag:"Comunicación", platform:"Win / Mac / Linux", url:"https://slack.com/downloads" },
+  { name:"Skype", desc:"Llamadas VoIP y videollamadas", icon:"📞", bg:"#E3F2FD", tag:"Comunicación", platform:"Win / Mac", url:"https://www.skype.com/get-skype/" },
+  { name:"WhatsApp Desktop", desc:"WhatsApp para escritorio", icon:"💚", bg:"#E8F5E9", tag:"Comunicación", platform:"Win / Mac", url:"https://www.whatsapp.com/download" },
+  { name:"Thunderbird", desc:"Cliente de correo electrónico", icon:"📧", bg:"#E3F2FD", tag:"Comunicación", platform:"Win / Mac / Linux", url:"https://www.thunderbird.net/es-ES/" },
+
+  // PRODUCTIVIDAD
+  { name:"Adobe Reader", desc:"Visor oficial de PDFs", icon:"📄", bg:"#FDEEEE", tag:"Productividad", platform:"Win / Mac", url:"https://get.adobe.com/reader/" },
+  { name:"LibreOffice", desc:"Suite ofimática gratuita", icon:"📊", bg:"#E8F5E9", tag:"Productividad", platform:"Win / Mac / Linux", url:"https://www.libreoffice.org/download/download/" },
+  { name:"Foxit PDF Reader", desc:"Lector de PDF ligero y rápido", icon:"📋", bg:"#FBE9E7", tag:"Productividad", platform:"Win / Mac", url:"https://www.foxit.com/pdf-reader/" },
+  { name:"Notion", desc:"Notas, wikis y bases de datos", icon:"📓", bg:"#F5F5F5", tag:"Productividad", platform:"Win / Mac", url:"https://www.notion.so/desktop" },
+  { name:"Obsidian", desc:"Notas en Markdown con grafos", icon:"🪨", bg:"#EDE7F6", tag:"Productividad", platform:"Win / Mac / Linux", url:"https://obsidian.md/download" },
+  { name:"VLC", desc:"Reproductor multimedia universal", icon:"🎬", bg:"#FFF3E0", tag:"Productividad", platform:"Win / Mac / Linux", url:"https://www.videolan.org/vlc/" },
+
+  // SEGURIDAD
+  { name:"KeePass", desc:"Gestor de contraseñas local", icon:"🔑", bg:"#FFF9C4", tag:"Seguridad", platform:"Windows", url:"https://keepass.info/download.html" },
+  { name:"Bitwarden", desc:"Gestor de contraseñas en la nube", icon:"🛡️", bg:"#E8EAF6", tag:"Seguridad", platform:"Win / Mac / Linux", url:"https://bitwarden.com/download/" },
+  { name:"Malwarebytes", desc:"Antimalware bajo demanda", icon:"🦠", bg:"#E0F7FA", tag:"Seguridad", platform:"Win / Mac", url:"https://www.malwarebytes.com/mwb-download" },
+  { name:"VeraCrypt", desc:"Cifrado de discos y contenedores", icon:"🔐", bg:"#EFEBE9", tag:"Seguridad", platform:"Win / Mac / Linux", url:"https://www.veracrypt.fr/en/Downloads.html" },
+  { name:"Wireshark", desc:"Análisis de tráfico de red", icon:"🌊", bg:"#E3F2FD", tag:"Seguridad", platform:"Win / Mac / Linux", url:"https://www.wireshark.org/download.html" },
+
+  // DESARROLLO
+  { name:"Visual Studio Code", desc:"Editor de código gratuito de Microsoft", icon:"💻", bg:"#E3F2FD", tag:"Desarrollo", platform:"Win / Mac / Linux", url:"https://code.visualstudio.com/download" },
+  { name:"Notepad++", desc:"Editor de texto avanzado", icon:"📝", bg:"#E8F5E9", tag:"Desarrollo", platform:"Windows", url:"https://notepad-plus-plus.org/downloads/" },
+  { name:"Git", desc:"Control de versiones distribuido", icon:"🌿", bg:"#FCE4EC", tag:"Desarrollo", platform:"Win / Mac / Linux", url:"https://git-scm.com/downloads" },
+  { name:"Python", desc:"Lenguaje de programación versátil", icon:"🐍", bg:"#E8F5E9", tag:"Desarrollo", platform:"Win / Mac / Linux", url:"https://www.python.org/downloads/" },
+  { name:"Node.js", desc:"Entorno de ejecución JavaScript", icon:"🟢", bg:"#E8F5E9", tag:"Desarrollo", platform:"Win / Mac / Linux", url:"https://nodejs.org/es/download/" },
+  { name:"PuTTY", desc:"Cliente SSH y Telnet", icon:"⌨️", bg:"#EFEBE9", tag:"Desarrollo", platform:"Windows", url:"https://www.putty.org/" },
+  { name:"WinSCP", desc:"Cliente FTP y SFTP gráfico", icon:"📡", bg:"#F3E5F5", tag:"Desarrollo", platform:"Windows", url:"https://winscp.net/eng/download.php" },
+  { name:"Postman", desc:"Testing y documentación de APIs", icon:"🚀", bg:"#FBE9E7", tag:"Desarrollo", platform:"Win / Mac / Linux", url:"https://www.postman.com/downloads/" },
+  { name:"Docker Desktop", desc:"Contenedores y virtualización", icon:"🐳", bg:"#E3F2FD", tag:"Desarrollo", platform:"Win / Mac", url:"https://www.docker.com/products/docker-desktop/" },
+  { name:"DBeaver", desc:"Cliente universal de bases de datos", icon:"🗄️", bg:"#E8F4FD", tag:"Desarrollo", platform:"Win / Mac / Linux", url:"https://dbeaver.io/download/" },
+
+  // RED
+  { name:"Nmap", desc:"Escáner de red y puertos", icon:"📡", bg:"#E0F7FA", tag:"Red", platform:"Win / Mac / Linux", url:"https://nmap.org/download.html" },
+  { name:"Advanced IP Scanner", desc:"Escáner de red local", icon:"🔭", bg:"#F1F8E9", tag:"Red", platform:"Windows", url:"https://www.advanced-ip-scanner.com/es/" },
+  { name:"Angry IP Scanner", desc:"Escaneo rápido de IPs", icon:"⚡", bg:"#FFF9C4", tag:"Red", platform:"Win / Mac / Linux", url:"https://angryip.org/download/" },
+  { name:"FileZilla", desc:"Cliente FTP multiplataforma", icon:"📂", bg:"#FBE9E7", tag:"Red", platform:"Win / Mac / Linux", url:"https://filezilla-project.org/download.php" },
+];
+
+const allTags = ["Todos", ...new Set(apps.map(a => a.tag))];
+let activeTag = "Todos";
+
+const skinSelect = document.getElementById('skin-select');
+APP_SKINS.forEach(([id, label]) => {
+  const opt = document.createElement('option');
+  opt.value = id;
+  opt.textContent = label;
+  opt.selected = id === savedSkin;
+  skinSelect.appendChild(opt);
+});
+skinSelect.addEventListener('change', () => saveSkin(skinSelect.value));
+
+// Render filters
+const filtersEl = document.getElementById("filters");
+allTags.forEach(t => {
+  const btn = document.createElement("button");
+  btn.className = "filter-btn" + (t === "Todos" ? " active" : "");
+  btn.textContent = t;
+  btn.setAttribute("aria-pressed", t === "Todos" ? "true" : "false");
+  btn.addEventListener("click", () => {
+    activeTag = t;
+    document.querySelectorAll(".filter-btn").forEach(b => {
+      b.classList.remove("active");
+      b.setAttribute("aria-pressed", "false");
+    });
+    btn.classList.add("active");
+    btn.setAttribute("aria-pressed", "true");
+    filterApps();
+  });
+  filtersEl.appendChild(btn);
+});
+
+// SVG icons inline
+const iconDownload = `<svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>`;
+
+// Render cards
+const grid = document.getElementById("grid");
+apps.forEach((app, i) => {
+  const card = document.createElement("div");
+  card.className = "app-card";
+  card.dataset.name = app.name.toLowerCase() + " " + app.desc.toLowerCase();
+  card.dataset.tag = app.tag;
+  card.style.animationDelay = (i * 0.018) + "s";
+  card.innerHTML = `
+    <div class="card-top">
+      <div class="app-icon" style="background:${app.bg}">${app.icon}</div>
+      <div class="app-meta">
+        <div class="app-name">${app.name}</div>
+        <span class="app-tag">${app.tag}</span>
+      </div>
+    </div>
+    <div class="app-desc">${app.desc}</div>
+    <div class="app-platform">${app.platform}</div>
+    <a class="dl-btn" href="${app.url}" target="_blank" rel="noopener noreferrer">
+      ${iconDownload} Descargar
+    </a>
+  `;
+  grid.appendChild(card);
+});
+
+function filterApps() {
+  const q = document.getElementById("search").value.toLowerCase().trim();
+  const cards = grid.querySelectorAll(".app-card");
+  let visible = 0;
+  cards.forEach(card => {
+    const matchTag = activeTag === "Todos" || card.dataset.tag === activeTag;
+    const matchQ = !q || card.dataset.name.includes(q);
+    const show = matchTag && matchQ;
+    card.classList.toggle("hidden", !show);
+    if (show) visible++;
+  });
+  const label = document.getElementById("count-label");
+  const noRes = document.getElementById("no-results");
+  label.innerHTML = `<span>${visible}</span> aplicaciones`;
+  document.getElementById("header-count").textContent = visible + " APPS";
+  noRes.style.display = visible === 0 ? "block" : "none";
+}
+
+document.getElementById("search").addEventListener("input", filterApps);
+filterApps();
+</script>
+</body>
+</html>
