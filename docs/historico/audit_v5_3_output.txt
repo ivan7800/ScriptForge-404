@@ -1,0 +1,92 @@
+[OK] loaded security.js
+[OK] loaded templates.js
+[OK] loaded templates-extra.js
+[OK] loaded templates-cau-mega.js
+[OK] loaded templates-v5-pro.js
+[OK] loaded generator.js
+
+=== ScriptForge 404 audit v5.3 ===
+Total templates: 560
+V5 Pro templates: 30
+Duplicate IDs: 0
+Generation errors: 0
+PowerShell here-string issues: 0
+Standalone 5-script checks: [
+  {
+    "name": "01 Diagnóstico rápido PC",
+    "bat": true,
+    "ps1": true,
+    "readme": true
+  },
+  {
+    "name": "05 Mapear unidades de red",
+    "bat": true,
+    "ps1": true,
+    "readme": true
+  },
+  {
+    "name": "04 Reset DNS/Winsock/TCP-IP",
+    "bat": true,
+    "ps1": true,
+    "readme": true
+  },
+  {
+    "name": "09 Reparar botón Teams/Outlook",
+    "bat": true,
+    "ps1": true,
+    "readme": true
+  },
+  {
+    "name": "22 Diagnóstico Intune/Autopilot",
+    "bat": true,
+    "ps1": true,
+    "readme": true
+  }
+]
+Categories: {
+  "Base CAU": 21,
+  "Unidades de red": 26,
+  "Seguridad": 22,
+  "Software": 23,
+  "Logs / Eventos": 16,
+  "SCCM": 20,
+  "Intune / Autopilot": 24,
+  "Citrix / VPN": 17,
+  "OneDrive": 12,
+  "Office / Outlook": 35,
+  "Windows Update": 18,
+  "Sistema": 4,
+  "Rendimiento": 26,
+  "Limpieza": 3,
+  "Impresoras": 19,
+  "Teams": 21,
+  "Red": 34,
+  "Tickets CAU": 15,
+  "Diagnostico": 3,
+  "Outlook": 2,
+  "Office": 2,
+  "Servicios": 14,
+  "Exportacion": 1,
+  "Permisos": 11,
+  "Backup": 1,
+  "Tareas": 1,
+  "Intune": 2,
+  "Citrix": 1,
+  "Registro": 13,
+  "Logs CAU": 3,
+  "Personalizado": 2,
+  "Energia": 15,
+  "Navegadores": 17,
+  "Usuarios": 1,
+  "Apps utiles": 1,
+  "Inventario": 21,
+  "AD / Dominio": 19,
+  "Certificados": 9,
+  "Perfil de usuario": 15,
+  "Dispositivos": 16,
+  "Comunicaciones": 14,
+  "Todo en uno": 20
+}
+
+[OK] Audit clean.
+Render sanity OK

@@ -1,0 +1,19 @@
+ScriptForge 404 v5.2.4 - Salida de auditoria (node)
+
+Total templates: 560
+V5 Pro templates: 30
+Duplicate IDs: 0
+Generation errors: 0
+Suspect corrupted lines (line ending in lone backslash): 0
+Standalone BAT lint issues: 0/30
+Standalone PS1 lint issues: 0/30
+
+Bug corregido en esta ronda:
+- templates-v5-pro.js: la funcion tpl() usaba un regex ingenuo
+  (replace(/\\n/g, '\n')) que confundia "\\" + "netuse..." con un
+  salto de linea intencional, partiendo el nombre de archivo
+  "netuse_antes.txt" en la plantilla 06 (reparar-unidades-red).
+  Sustituida por un parser de escapes secuencial (izquierda a
+  derecha) que distingue correctamente "\\\\" (barra literal) de
+  "\\n" (salto de linea), eliminando la clase de bug por completo
+  en las 30 plantillas V5 Pro, no solo en la que se detecto.
